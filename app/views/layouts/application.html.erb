@@ -10,6 +10,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="main-wrap">
+      <header class="main-header">
+        <a href="/" class="main-header__logo">
+          <%=image_tag('logo.svg', alt: 'BeFocused')%>
+        </a>
+        <%= link_to root_path, { class: "icon-btn" }  do %>
+          <i class="icon-btn__icon icon icon-circle-info"></i>
+          <span class="icon-btn__txt">About</span>
+        <% end %>
+      </header>
+
+      <main class="main-content">
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>

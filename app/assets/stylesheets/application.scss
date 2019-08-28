@@ -11,3 +11,13 @@
 @import 'components/module';
 @import 'modules/module';
 @import 'utils/module';
+
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.main-btn--submit {
+  width: auto;
+}
